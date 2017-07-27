@@ -1,0 +1,28 @@
+<form>
+	
+	<div class="form-group">
+		<!-- <input class="form-control" 
+		[(ngModel)]="title" 
+		name = "title"
+		placeholder="enter a thing"> -->
+		<input type="text"
+			   class="form-control" 
+			   name="title"
+			   placeholder="Enter a title"
+			   [(ngModel)] = "title">	
+	</div>
+	
+	<div class="form-group">
+		<!-- <input class="form-control" 
+		[(ngModel)]="content"
+		name = "content"
+		placeholder="enter a content" > -->
+		<input type="text" 
+			   class="form-control" 
+			   name="content"
+			   placeholder="enter content"
+			   [(ngModel)] = "content">
+	</div>
+	<button class="btn btn-primary" (click)="buttonClick()">Add</button>
+
+</form>

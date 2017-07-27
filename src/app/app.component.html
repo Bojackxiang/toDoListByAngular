@@ -1,0 +1,12 @@
+<div class="container">
+	<p>A Fucking To Do List</p>
+
+	<app-input 
+			(sendingData) = "add_item($event)">
+	</app-input>
+
+
+	<app-show *ngFor="let item of items" [thing] = "item" class="show"></app-show>
+	
+</div>
+
